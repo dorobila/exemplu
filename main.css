@@ -104,6 +104,7 @@ body,
 .content-title>div>a {
   cursor: pointer;
   margin-left: 0.5em;
+  text-decoration: none;
 }
 
 .content-title>div>a svg {
