@@ -1,0 +1,166 @@
+html,
+body,
+.grid-container {
+    height: 100%;
+    margin: 0;
+}
+
+/* .grid-container * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.grid-container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Background";
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . . bg_top bg_top . ."". container container container container container container container container .""bg_left container container container container container container container container ."". container container container container container container container container ."". container container container container container container container container ."". container container container container container container container container ."". container container container container container container container container bg-_right"". container container container container container container container container ."". container container container container container container container container ."". . bg_bottom . . . . . . .";
+    grid-area: background;
+    font-size: 1vw;
+    height: 51vw;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: #EBEAE6;
+}
+
+.bg_top {
+    grid-area: bg_top;
+    background: #F7A019;
+}
+
+.bg_left {
+    grid-area: bg_left;
+    background: #F7A019;
+}
+
+.bg-_right {
+    grid-area: bg-_right;
+    background: #F7A019;
+}
+
+.bg_bottom {
+    grid-area: bg_bottom;
+    background: #F7A019;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content";
+    grid-area: container;
+    background-color: white;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.23);
+    z-index: 2;
+}
+
+.photo {
+    grid-area: photo;
+    padding-right: 150px;
+    background-image: url(../exemplu/assets/funny-background-twoo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 1.5em;
+    text-align: center;
+    z-index: 3;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin: 2em;
+    z-index: 3;
+}
+
+.content-title {
+    align-items: center;
+    color: #F7A019;
+    display: flex;
+    font-size: 1.2em;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.content-title>div>a {
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.content-title>div>a svg {
+    fill: #314649;
+    height: 2em;
+    width: 2em;
+}
+
+.content-title>div>a:hover>svg {
+    fill: #F7A019;
+}
+
+.content-about {
+    height: 40%;
+}
+
+.content-about>p {
+    font-size: 1.5em;
+}
+
+.content-boxes {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 40%;
+}
+
+.content-box {
+    align-items: center;
+    background: #314649;
+    color: white;
+    display: flex;
+    height: 10em;
+    width: 50%;
+}
+
+.content-box.one {
+    margin-right: 3em;
+    border-radius: 26% 74% 26% 74% / 74% 24% 76% 26%
+}
+
+.content-box.two {
+    margin-right: 3em;
+    border-radius: 26% 76% 24% 74% / 74% 26% 74% 26%
+}
+
+.content-box>a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 300;
+    height: 100%;
+    padding-top: 35%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* .content-box>a:hover {
+    background-color: red;
+} */
