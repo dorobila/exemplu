@@ -1,6 +1,6 @@
 # Usefull links:
 
-- https://www.layoutit.com
+- https://www.layoutit.com/grid
 - https://codepen.io/ruandre/pen/howFi
 - https://github.com/9elements/fancy-border-radius
 - http://book.mixu.net/css/
