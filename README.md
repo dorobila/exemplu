@@ -1,4 +1,4 @@
-# usefull links:
+# Usefull links:
 
 - https://www.layoutit.com
 - https://codepen.io/ruandre/pen/howFi
