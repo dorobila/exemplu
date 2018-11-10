@@ -34,8 +34,8 @@ body,
     height: 51vw;
     width: 100vw;
     margin: 0 auto;
-    z-index: 1;
     background-color: #EBEAE6;
+    z-index: 1;
 }
 
 .bg_top {
@@ -64,7 +64,7 @@ body,
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content""photo photo photo content content content content content";
     grid-area: container;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.23);
     z-index: 2;
 }
@@ -74,8 +74,6 @@ body,
     padding-right: 150px;
     background-image: url(../exemplu/assets/funny-background-twoo.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Gloria Hallelujah', cursive;
     margin: 1.5em;
     text-align: center;
     z-index: 3;
@@ -95,9 +93,9 @@ body,
     align-items: center;
     color: #F7A019;
     display: flex;
+    justify-content: space-between;
     font-size: 1.2em;
     height: 20%;
-    justify-content: space-between;
 }
 
 .content-title>div>a {
@@ -141,12 +139,12 @@ body,
 
 .content-box.one {
     margin-right: 3em;
-    border-radius: 26% 74% 26% 74% / 74% 24% 76% 26%
+    border-radius: 26% 74% 26% 74% / 74% 24% 76% 26%;
 }
 
 .content-box.two {
     margin-right: 3em;
-    border-radius: 26% 76% 24% 74% / 74% 26% 74% 26%
+    border-radius: 26% 74% 26% 74% / 74% 24% 76% 26%;
 }
 
 .content-box>a {
