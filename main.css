@@ -90,9 +90,9 @@ body,
 }
 
 .content-title {
-    align-items: center;
     color: #F7A019;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-size: 1.2em;
     height: 20%;
@@ -129,10 +129,10 @@ body,
 }
 
 .content-box {
+    display: flex;
     align-items: center;
     background: #314649;
     color: white;
-    display: flex;
     height: 10em;
     width: 50%;
 }
