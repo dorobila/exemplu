@@ -33,7 +33,7 @@ body,
   grid-area: background;
   font-size: 1vw;
   height: 49vw;
-  width: 100vw;
+  /* width: 100vw; */
   margin: 0 auto;
   background-color: #ebeae6;
   z-index: 1;
